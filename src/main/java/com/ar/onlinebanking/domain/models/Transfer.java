@@ -10,6 +10,9 @@ import java.util.Date;
 @Data
 public class Transfer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "transfer_id")
     private Long id;
 
     private Long sender;
