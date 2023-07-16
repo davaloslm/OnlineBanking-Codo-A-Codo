@@ -120,10 +120,6 @@ public class AccountService {
         if (account.getBalance().subtract(amount).intValue() > 0){
             account.setBalance(account.getBalance().subtract(amount));
             repository.save(account);
-        }else{
-
-            //si no hay fondos se lanza una excepción
-            throw new InsufficientFundsException("No es posible realizar la operación");
         }
 
         //  el método retorna el monto debitado
