@@ -12,4 +12,6 @@ public class Account {
     private Long id;
 
     private BigDecimal balance;
+
+    private User owner;
 }
